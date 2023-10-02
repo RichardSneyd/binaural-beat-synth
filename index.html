@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-instance Alpha Wave Binaural Beats Synthesizer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="synthesizer.js" defer></script>
+</head>
+<body>
+    <h1 class="text-center mt-4">Multi-instance Alpha Wave Binaural Beats Synthesizer</h1>
+    
+    <div id="masterControls" class="text-center mt-3">
+        <label for="masterTempo">Master Tempo (BPM): </label>
+        <input id="masterTempo" type="number" value="120" min="30" max="300">
+        <button id="masterStart" class="btn btn-success">Master Start</button>
+        <button id="masterStop" class="btn btn-danger">Master Stop</button>
+    </div>
+
+    <div class="text-center mt-3 mb-4">
+        <button id="addSynth" class="btn btn-primary">Add New Synthesizer</button>
+    </div>
+    
+    <div id="synths" class="container">
+        <!-- Synthesizer instances will be inserted here as Bootstrap cards -->
+    </div>
+</body>
+</html>
